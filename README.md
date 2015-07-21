@@ -6,6 +6,6 @@
 [![NPM Status](http://img.shields.io/npm/dm/bumped-terminal.svg?style=flat-square)](https://www.npmjs.org/package/bumped-terminal)
 [![Gratipay](https://img.shields.io/gratipay/bumped.svg?style=flat-square)](https://gratipay.com/~bumped/)
 
-> Execute whatever terminal command inside ast bumped plugin
+> Executes whatever terminal command inside as bumped plugin.
 
 MIT © Bumped
