@@ -9,4 +9,4 @@ module.exports = (bumped, plugin, cb) ->
     else
       bumped.logger.plugin term.stdout
 
-     cb err
+    cb err
