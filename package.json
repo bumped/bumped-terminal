@@ -18,7 +18,8 @@
     "terminal"
   ],
   "dependencies": {
-    "coffee-script": "*"
+    "coffee-script": "~1.9.3",
+    "oh-my-terminal": "~1.1.0"
   },
   "devDependencies": {
     "mocha": "*",
