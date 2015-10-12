@@ -4,7 +4,7 @@
 [![Dependency status](http://img.shields.io/david/bumped/bumped-terminal.svg?style=flat-square)](https://david-dm.org/bumped/bumped-terminal)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/bumped/bumped-terminal.svg?style=flat-square)](https://david-dm.org/bumped/bumped-terminal#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/bumped-terminal.svg?style=flat-square)](https://www.npmjs.org/package/bumped-terminal)
-[![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat)](https://www.gittip.com/Kikobeats/)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
 > Executes whatever terminal command inside bumped as `prerelease` or `postrelease` action.
 
