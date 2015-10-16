@@ -6,10 +6,20 @@ keywords =
   '$newVersion': '_version'
   '$oldVersion': '_oldVersion'
 
+deleteLastLineBreak = (str) -> str.replace /\n$/, ''
+
 module.exports = (bumped, plugin, cb) ->
 
   plugin.command = plugin.command.replace(key, bumped[value]) for key, value of keywords
 
+  options =
+    output: if plugin.output? then plugin.ouptut else true
+
   terminal.exec plugin.command, (err, term) ->
-    err.message = err.message.trim() if err
-    cb err, term.stdout
+
+    if err
+      err.message = deleteLastLineBreak term.stderr
+    else
+      plugin.logger.success deleteLastLineBreak term.stdout
+
+    cb err
