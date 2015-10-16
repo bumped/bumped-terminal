@@ -8,6 +8,10 @@ keywords =
 
 deleteLastLineBreak = (str) -> str.replace /\n$/, ''
 
+printSuccessMessages = (logger, messages) ->
+  logger.success message for message in messages when message isnt ''
+
+
 module.exports = (bumped, plugin, cb) ->
 
   plugin.command = plugin.command.replace(key, bumped[value]) for key, value of keywords
@@ -20,6 +24,6 @@ module.exports = (bumped, plugin, cb) ->
     if err
       err.message = deleteLastLineBreak term.stderr
     else
-      plugin.logger.success deleteLastLineBreak term.stdout
+      printSuccessMessages plugin.logger, term.stdout.split('\n')
 
     cb err
