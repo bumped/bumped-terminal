@@ -1,7 +1,16 @@
+<a name="0.5.0"></a>
+# 0.5.0 (2015-11-03)
+
+
+* replace keywords globally ([d94629c](https://github.com/bumped/bumped-terminal/commit/d94629c))
+
+
+
 <a name="0.4.0"></a>
 # 0.4.0 (2015-10-16)
 
 
+* 0.4.0 releases ([dc23068](https://github.com/bumped/bumped-terminal/commit/dc23068))
 * improve terminal messages integration ([6695c1f](https://github.com/bumped/bumped-terminal/commit/6695c1f))
 * prevent line break ([5d5623b](https://github.com/bumped/bumped-terminal/commit/5d5623b))
 * updated config ([1dfc83a](https://github.com/bumped/bumped-terminal/commit/1dfc83a))
