@@ -1,29 +1,38 @@
 'use strict'
 
-terminal = require 'oh-my-terminal'
+term = require 'oh-my-terminal'
 
 keywords =
-  '$newVersion': '_version'
-  '$oldVersion': '_oldVersion'
+  '$newVersion':
+    regex: /\$newVersion/g
+    replace: '_version'
+
+  '$oldVersion':
+    regex: /\$oldVersion/g
+    replace: '_oldVersion'
 
 deleteLastLineBreak = (str) -> str.replace /\n$/, ''
 
-printSuccessMessages = (logger, messages) ->
-  logger.success message for message in messages when message isnt ''
+printMessage = (logger, messages) ->
+  logger.success message for message in messages.split '\n' when message isnt ''
 
+printMessages = (logger, term) ->
+  printMessage logger, term[type] for type in ['stdout', 'stderr'] when term[type] isnt ''
+
+replaceAll = (str, bumped, key) ->
+  str.replace keywords[key].regex, bumped[keywords[key].replace]
 
 module.exports = (bumped, plugin, cb) ->
 
-  plugin.command = plugin.command.replace(key, bumped[value]) for key, value of keywords
+  plugin.command = replaceAll plugin.command, bumped, key for key of keywords
 
-  options =
-    output: if plugin.output? then plugin.ouptut else true
+  options = output: if plugin.output? then plugin.ouptut else true
 
-  terminal.exec plugin.command, (err, term) ->
+  term.exec plugin.command, (err, term) ->
 
     if err
       err.message = deleteLastLineBreak term.stderr
     else
-      printSuccessMessages plugin.logger, term.stdout.split('\n')
+      printMessages plugin.logger, term
 
     cb err
