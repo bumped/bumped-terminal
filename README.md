@@ -1,5 +1,12 @@
 # bumped-terminal
 
+<h1 align="center">
+  <br>
+  <img src="http://i.imgur.com/DmMbFwL.png" alt="bumped">
+  <br>
+  <br>
+</h1>
+
 ![Last version](https://img.shields.io/github/tag/bumped/bumped-terminal.svg?style=flat-square)
 [![Dependency status](http://img.shields.io/david/bumped/bumped-terminal.svg?style=flat-square)](https://david-dm.org/bumped/bumped-terminal)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/bumped/bumped-terminal.svg?style=flat-square)](https://david-dm.org/bumped/bumped-terminal#info=devDependencies)
