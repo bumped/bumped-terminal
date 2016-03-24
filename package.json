@@ -22,7 +22,8 @@
     "terminal"
   ],
   "dependencies": {
-    "coffee-script": "~1.10.0"
+    "coffee-script": "~1.10.0",
+    "strip-eof": "~1.0.0"
   },
   "devDependencies": {
     "mocha": "latest",

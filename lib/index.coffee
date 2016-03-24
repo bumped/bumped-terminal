@@ -1,5 +1,6 @@
 'use strict'
 
+stripEof = require 'strip-eof'
 exec = require('child_process').exec
 
 keywords =
@@ -11,22 +12,28 @@ keywords =
     regex: /\$oldVersion/g
     replace: '_oldVersion'
 
-deleteLastLineBreak = (str) -> str.replace /\n$/, ''
+createLogger = (logger) ->
+  logState = (state, messages) ->
+    logger[state] message for message in messages when message isnt ''
+  return logState
 
 replaceAll = (str, bumped, key) ->
   str.replace keywords[key].regex, bumped[keywords[key].replace]
 
 module.exports = (bumped, plugin, cb) ->
-  plugin.command = replaceAll plugin.command, bumped, key for key of keywords
-  ps = exec plugin.command
+  logState = createLogger plugin.logger
+  cmd = replaceAll plugin.command, bumped, key for key of keywords
 
-  ps.stdout.on 'data', (data) =>
-    plugin.logger.success data
+  exec cmd, (err, stdout, stderr) ->
+    if err
+      code = err.code
+      err = true
+      buffer = stderr
+      type = 'error'
+    else
+      buffer = stdout
+      type = 'success'
 
-  ps.stderr.on 'data', (data) ->
-    plugin.logger.error deleteLastLineBreak data
-
-  ps.on 'close', (code) ->
-    return cb() unless code
-    plugin.logger.error "Process exited with code #{code}"
-    cb true
+    logState(type, stripEof(buffer).split('\n'))
+    plugin.logger.error "Process exited with code #{code}" if code
+    cb err
