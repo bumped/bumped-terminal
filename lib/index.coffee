@@ -22,9 +22,9 @@ replaceAll = (str, bumped, key) ->
 
 module.exports = (bumped, plugin, cb) ->
   logState = createLogger plugin.logger
-  cmd = replaceAll plugin.command, bumped, key for key of keywords
+  plugin.command = replaceAll plugin.command, bumped, key for key of keywords
 
-  exec cmd, (err, stdout, stderr) ->
+  exec plugin.command, (err, stdout, stderr) ->
     if err
       code = err.code
       err = true
