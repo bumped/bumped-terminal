@@ -1,3 +1,12 @@
+<a name="0.6.2"></a>
+## 0.6.2 (2016-03-24)
+
+*  releases ([b69075e](https://github.com/bumped/bumped-terminal/commit/b69075e))
+* Fix replace all under plugin command ([7afa010](https://github.com/bumped/bumped-terminal/commit/7afa010))
+* refactor: better look and feel ([8378caa](https://github.com/bumped/bumped-terminal/commit/8378caa))
+
+
+
 <a name="0.6.1"></a>
 ## 0.6.1 (2016-03-24)
 
