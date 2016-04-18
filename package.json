@@ -2,7 +2,7 @@
   "name": "bumped-terminal",
   "description": "Executes whatever terminal command inside as bumped plugin.",
   "homepage": "https://github.com/bumped/bumped-terminal",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "main": "./index.js",
   "author": {
     "name": "Kiko Beats",

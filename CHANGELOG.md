@@ -1,3 +1,10 @@
+<a name="0.6.3"></a>
+## 0.6.3 (2016-04-18)
+
+* concat stdout under error ([08a113d](https://github.com/bumped/bumped-terminal/commit/08a113d))
+
+
+
 <a name="0.6.2"></a>
 ## 0.6.2 (2016-03-24)
 
