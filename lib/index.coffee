@@ -28,7 +28,7 @@ module.exports = (bumped, plugin, cb) ->
     if err
       code = err.code
       err = true
-      buffer = stderr
+      buffer = stdout.concat(stderr)
       type = 'error'
     else
       buffer = stdout
