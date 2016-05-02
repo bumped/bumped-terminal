@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "coffee-script": "~1.10.0",
+    "execspawn": "~1.0.1",
     "strip-eof": "~1.0.0"
   },
   "devDependencies": {
