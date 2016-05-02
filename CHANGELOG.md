@@ -1,3 +1,10 @@
+<a name="0.7.1"></a>
+## 0.7.1 (2016-05-02)
+
+* Better exit wrapping ([8e489ea](https://github.com/bumped/bumped-terminal/commit/8e489ea))
+
+
+
 <a name="0.7.0"></a>
 # 0.7.0 (2016-05-02)
 
