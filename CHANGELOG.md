@@ -1,3 +1,12 @@
+<a name="0.7.0"></a>
+# 0.7.0 (2016-05-02)
+
+* Remove unnecessary files ([033c688](https://github.com/bumped/bumped-terminal/commit/033c688))
+* Update docs ([6163b91](https://github.com/bumped/bumped-terminal/commit/6163b91))
+* Use execspawn as dep ([b1d5b73](https://github.com/bumped/bumped-terminal/commit/b1d5b73))
+
+
+
 <a name="0.6.3"></a>
 ## 0.6.3 (2016-04-18)
 
