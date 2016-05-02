@@ -38,6 +38,7 @@ plugins:
     'Task description':
       plugin: 'bumped-terminal'
       command: 'your command'
+      # options: it will passed to child_process.spawn, see docs
 ```
 
 The plugin provide you a serie of keywords for use in your commands as well:
@@ -45,46 +46,34 @@ The plugin provide you a serie of keywords for use in your commands as well:
 * **$newVersion**: Alias for `bumped._version` (the current semver version).
 * **$oldVersion**: Alias for `bumped._oldVersion` (the before semver version).
 
+Additionally you can provide [child_process.spawn#options](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options)
 
 ## Example
 
 ```cson
 files: [
-  "package.json"
-  "bower.json"
+  'package.json'
 ]
+
 plugins:
+
+  prerelease:
+    'Linting config files':
+      plugin: 'bumped-finepack'
+
   postrelease:
-    'Compile browser version':
-      plugin: 'bumped-terminal'
-      command: 'gulp'
 
-    'Commit the new version':
-      plugin: 'bumped-terminal'
-      command: 'git add . && git commit -m "$newVersion releases"'
+    'Generating CHANGELOG file':
+      plugin: 'bumped-changelog'
 
+    'Commiting new version':
+      plugin: 'bumped-terminal'
+      command: 'git add CHANGELOG.md package.json && git commit -m "Release $newVersion"'
 ```
 
 which produces the following output:
 
-```bash
-$ bumped release patch
-success	: Releases version '0.1.4'.
-
-plugin	: bumped-terminal: Compile browser version
-
-[10:46:32] Requiring external module coffee-script/register
-[10:46:34] Using gulpfile ~/Projects/errorifier/gulpfile.coffee
-[10:46:34] Starting 'default'...
-[10:46:34] Starting 'browserify'...
-[10:46:34] Finished 'default' after 23 ms
-[10:46:34] Finished 'browserify' after 182 ms
-
-plugin	: bumped-terminal: Commit the new version
-
-[master f9be5f3] 0.1.4 releases
- 3 files changed, 3 insertions(+), 3 deletions(-)
-```
+<p align="center"><img src="example.png" alt="example"></p>
 
 ## License
 
