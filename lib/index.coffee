@@ -1,7 +1,8 @@
 'use strict'
 
-spawn = require 'execspawn'
+spawn    = require 'execspawn'
 stripEof = require 'strip-eof'
+omit     = require 'lodash.omit'
 
 keywords =
   '$newVersion':
@@ -15,14 +16,21 @@ keywords =
 replaceAll = (str, bumped, key) ->
   str.replace keywords[key].regex, bumped[keywords[key].replace]
 
+###*
+ * Execute a terminal command
+###
 module.exports = (bumped, plugin, cb) ->
+  command = plugin.opts.command
+  return cb new TypeError('command for bumped-terminal is required.') unless command
+
+  command = replaceAll command, bumped, key for key of keywords
+  opts = omit(plugin.opts, 'command')
   log = (type, data) -> plugin.logger[type] stripEof data.toString()
-  plugin.command = replaceAll plugin.command, bumped, key for key of keywords
 
   error = false
   errorMessage = null
 
-  cmd = spawn plugin.command, plugin.options
+  cmd = spawn command, plugin.options
 
   cmd.stdout.on 'data', (data) -> log 'success', data
 
