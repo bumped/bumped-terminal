@@ -1,3 +1,10 @@
+<a name="0.7.2"></a>
+## 0.7.2 (2016-08-27)
+
+* Add support the new bumped plugin interface ([82bd4f1](https://github.com/bumped/bumped-terminal/commit/82bd4f1))
+
+
+
 <a name="0.7.1"></a>
 ## 0.7.1 (2016-05-02)
 
