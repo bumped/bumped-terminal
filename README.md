@@ -15,7 +15,7 @@
 
 > Executes whatever terminal command inside bumped as `prerelease` or `postrelease` action.
 
-Configure your .bumpedrc adding a entry for bumped-terminal as the follow example:
+Configure your .bumpedrc adding a entry for `bumped-terminal` as the follow example:
 
 
 ```cson
