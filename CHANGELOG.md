@@ -1,3 +1,17 @@
+<a name="0.7.3"></a>
+## 0.7.3 (2016-12-21)
+
+* fix(package): update coffee-script to version 1.12.0 ([43b090c](https://github.com/bumped/bumped-terminal/commit/43b090c))
+* chore: drop support for Node.js 0.10 ([d3753b6](https://github.com/bumped/bumped-terminal/commit/d3753b6))
+* chore(package): update coffee-script to version 1.11.0 ([03d1166](https://github.com/bumped/bumped-terminal/commit/03d1166))
+* Update ([c3c1e26](https://github.com/bumped/bumped-terminal/commit/c3c1e26))
+
+
+### BREAKING CHANGE
+
+* This module no longer supports Node.js 0.10
+
+
 <a name="0.7.2"></a>
 ## 0.7.2 (2016-08-27)
 
