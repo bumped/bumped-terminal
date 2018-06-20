@@ -16,6 +16,10 @@
   "bugs": {
     "url": "https://github.com/bumped/bumped-terminal/issues"
   },
+  "files": [
+    "index",
+    "lib"
+  ],
   "keywords": [
     "bumped",
     "plugin",
