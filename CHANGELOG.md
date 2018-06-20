@@ -1,3 +1,12 @@
+<a name="0.7.4"></a>
+## 0.7.4 (2018-06-20)
+
+* Handle end of lines ([fe2ee33](https://github.com/bumped/bumped-terminal/commit/fe2ee33))
+* Handle end of lines ([858f84d](https://github.com/bumped/bumped-terminal/commit/858f84d))
+* chore(package): update dependencies ([2423a42](https://github.com/bumped/bumped-terminal/commit/2423a42))
+
+
+
 <a name="0.7.3"></a>
 ## 0.7.3 (2016-12-21)
 
