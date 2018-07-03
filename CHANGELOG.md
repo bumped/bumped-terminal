@@ -1,3 +1,10 @@
+<a name="0.7.5"></a>
+## 0.7.5 (2018-07-03)
+
+* Fix file ([298502c](https://github.com/bumped/bumped-terminal/commit/298502c))
+
+
+
 <a name="0.7.4"></a>
 ## 0.7.4 (2018-06-20)
 
