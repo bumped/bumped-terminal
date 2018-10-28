@@ -1,3 +1,107 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.7.6"></a>
+## 0.7.6 (2018-10-28)
+
+
+
+<a name="0.7.5"></a>
+## 0.7.5 (2018-07-03)
+
+
+
+<a name="0.7.4"></a>
+## 0.7.4 (2018-06-20)
+
+
+
+<a name="0.7.3"></a>
+## 0.7.3 (2016-12-21)
+
+
+### Bug Fixes
+
+* **package:** update coffee-script to version 1.12.0 ([43b090c](https://github.com/bumped/bumped-terminal/commit/43b090c))
+
+
+### Chores
+
+* drop support for Node.js 0.10 ([d3753b6](https://github.com/bumped/bumped-terminal/commit/d3753b6))
+
+
+### BREAKING CHANGES
+
+* This module no longer supports Node.js 0.10
+
+
+
+<a name="0.7.2"></a>
+## 0.7.2 (2016-08-27)
+
+
+
+<a name="0.7.1"></a>
+## 0.7.1 (2016-05-02)
+
+
+
+<a name="0.7.0"></a>
+# 0.7.0 (2016-05-02)
+
+
+
+<a name="0.6.3"></a>
+## 0.6.3 (2016-04-18)
+
+
+
+<a name="0.6.2"></a>
+## 0.6.2 (2016-03-24)
+
+
+
+<a name="0.6.0"></a>
+# 0.6.0 (2016-03-24)
+
+
+
+<a name="0.5.0"></a>
+# 0.5.0 (2015-11-03)
+
+
+
+<a name="0.4.0"></a>
+# 0.4.0 (2015-10-16)
+
+
+
+<a name="0.3.4"></a>
+## 0.3.4 (2015-10-12)
+
+
+
+<a name="0.3.3"></a>
+## 0.3.3 (2015-07-29)
+
+
+
+<a name="0.3.1"></a>
+## 0.3.1 (2015-07-29)
+
+
+
+<a name="0.2.0"></a>
+# 0.2.0 (2015-07-28)
+
+
+
+<a name="0.1.2"></a>
+## 0.1.2 (2015-07-21)
+
+
+
 <a name="0.7.5"></a>
 ## 0.7.5 (2018-07-03)
 
@@ -164,6 +268,3 @@
 
 * first commit ([6276451](https://github.com/bumped/bumped-terminal/commit/6276451))
 * updated ([0fe2eb1](https://github.com/bumped/bumped-terminal/commit/0fe2eb1))
-
-
-
