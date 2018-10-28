@@ -1,7 +1,7 @@
 'use strict'
 
 spawn    = require 'execspawn'
-stripEof = require 'strip-eof'
+stripEof = require 'strip-final-newline'
 omit     = require 'lodash.omit'
 os       = require 'os'
 
