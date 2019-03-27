@@ -1,3 +1,13 @@
+<a name="0.7.7"></a>
+## 0.7.7 (2019-03-27)
+
+* Migrate coffeescript ([b274a24](https://github.com/bumped/bumped-terminal/commit/b274a24))
+* chore(release): 0.7.6 ([3038052](https://github.com/bumped/bumped-terminal/commit/3038052))
+* build: update dependencies ([b262daa](https://github.com/bumped/bumped-terminal/commit/b262daa))
+* ci: automate workflow ([a9d4741](https://github.com/bumped/bumped-terminal/commit/a9d4741))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
