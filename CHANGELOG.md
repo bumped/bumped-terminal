@@ -1,3 +1,11 @@
+<a name="0.7.8"></a>
+## 0.7.8 (2019-03-27)
+
+* build: update dependencies ([c2775fa](https://github.com/bumped/bumped-terminal/commit/c2775fa))
+* build: update release command ([0b73221](https://github.com/bumped/bumped-terminal/commit/0b73221))
+
+
+
 <a name="0.7.7"></a>
 ## 0.7.7 (2019-03-27)
 
