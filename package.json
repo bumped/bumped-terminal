@@ -22,24 +22,24 @@
     "terminal"
   ],
   "dependencies": {
-    "coffee-script": "~1.12.2",
+    "coffeescript": "~1.12.2",
     "execspawn": "~1.0.1",
     "lodash.omit": "~4.5.0",
     "strip-final-newline": "~2.0.0"
   },
   "devDependencies": {
-    "mocha": "latest",
-    "should": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "ci-publish": "latest",
     "conventional-github-releaser": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "mocha": "latest",
     "npm-check-updates": "latest",
-    "standard-version": "latest",
-    "ci-publish": "latest"
+    "should": "latest",
+    "standard-version": "latest"
   },
   "engines": {
     "node": ">= 4"
@@ -49,14 +49,14 @@
     "lib"
   ],
   "scripts": {
-    "test": "sh test/test.sh",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
     "prerelease": "npm run update:check && git-authors-cli",
+    "release": "git add package.json && standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "release": "git add package.json && standard-version -a",
-    "update:check": "ncu -- --error-level 2",
-    "update": "ncu -a"
+    "test": "sh test/test.sh",
+    "update": "ncu -a",
+    "update:check": "ncu -- --error-level 2"
   },
   "license": "MIT",
   "commitlint": {
@@ -70,17 +70,17 @@
       "pre-commit": "lint-staged"
     }
   },
-  "standard-version": {
-    "scripts": {
-      "prechangelog": "git-authors-cli"
-    }
-  },
   "lint-staged": {
     "linters": {
       "package.json": [
         "finepack",
         "git add"
       ]
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
     }
   }
 }
