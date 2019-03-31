@@ -2,7 +2,7 @@
   "name": "bumped-terminal",
   "description": "Executes whatever terminal command inside as bumped plugin.",
   "homepage": "https://github.com/bumped/bumped-terminal",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "main": "./index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",

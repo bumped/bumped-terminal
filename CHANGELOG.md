@@ -1,3 +1,22 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.7.9"></a>
+## [0.7.9](https://github.com/bumped/bumped-terminal/compare/v0.7.7...v0.7.9) (2019-03-31)
+
+
+### Bug Fixes
+
+* **package:** update coffeescript to version 2.4.0 ([4d76198](https://github.com/bumped/bumped-terminal/commit/4d76198))
+
+
+
+<a name="0.7.8"></a>
+## 0.7.8 (2019-03-27)
+
+
+
 <a name="0.7.8"></a>
 ## 0.7.8 (2019-03-27)
 
