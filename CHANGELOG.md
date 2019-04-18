@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.10](https://github.com/bumped/bumped-terminal/compare/v0.7.9...v0.7.10) (2019-04-18)
+
+
+
 <a name="0.7.9"></a>
 ## [0.7.9](https://github.com/bumped/bumped-terminal/compare/v0.7.7...v0.7.9) (2019-03-31)
 
