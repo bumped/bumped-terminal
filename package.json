@@ -22,7 +22,7 @@
     "terminal"
   ],
   "dependencies": {
-    "coffeescript": "~2.4.0",
+    "coffeescript": "~2.5.0",
     "execspawn": "~1.0.1",
     "lodash.omit": "~4.5.0",
     "strip-final-newline": "~2.0.0"
