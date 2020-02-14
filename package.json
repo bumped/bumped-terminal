@@ -9,6 +9,12 @@
     "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
+  "contributors": [
+    {
+      "name": "ImgBotApp",
+      "email": "ImgBotHelp@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bumped/bumped-terminal.git"
@@ -71,19 +77,14 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "package.json": [
-        "finepack",
-        "git add"
-      ]
-    }
+    "package.json": [
+      "finepack",
+      "git add"
+    ]
   },
   "standard-version": {
     "scripts": {
       "prechangelog": "git-authors-cli"
     }
-  },
-  "contributors": [
-    "ImgBotApp <ImgBotHelp@gmail.com>"
-  ]
+  }
 }
