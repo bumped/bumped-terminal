@@ -1,3 +1,11 @@
+## 0.8.0 (2020-02-14)
+
+* build: migrate lint-staged ([e169a0e](https://github.com/bumped/bumped-terminal/commit/e169a0e))
+* build: update travis ([4acfaff](https://github.com/bumped/bumped-terminal/commit/4acfaff))
+* fix(package): update coffeescript to version 2.5.0 ([49d60a5](https://github.com/bumped/bumped-terminal/commit/49d60a5))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
