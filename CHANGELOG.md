@@ -1,3 +1,9 @@
+## <small>0.8.1 (2020-04-02)</small>
+
+* build: update dependencies ([55efaf9](https://github.com/bumped/bumped-terminal/commit/55efaf9))
+
+
+
 ## 0.8.0 (2020-02-14)
 
 * build: migrate lint-staged ([e169a0e](https://github.com/bumped/bumped-terminal/commit/e169a0e))
